@@ -4,5 +4,5 @@ Download this repository by `git clone git@github.com:technophilix/iiflstockdata
 ![enter image description here](https://i.ibb.co/GxG8bgc/git.png)
 
 Go to the root folder and rename the `.env.example` file to the `.env` file. Then change the dummy credentials to real.  
-Open the terminal (command prompt in windows) run `pip install -r requirement.txt`  
+Open the terminal (command prompt in windows) run `pip install -r requirements.txt`  
 After installing all the dependencies, run `python main.py`
