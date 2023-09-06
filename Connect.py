@@ -667,7 +667,7 @@ class XTSConnect(XTSCommon):
             response = self._get('market.instruments.ohlc', params)
             return response
         except Exception as e:
-            return response['description']
+            return (e)
 
     def get_series(self, exchangeSegment):
         try:
@@ -675,7 +675,7 @@ class XTSConnect(XTSCommon):
             response = self._get('market.instruments.instrument.series', params)
             return response
         except Exception as e:
-            return response['description']
+            return e
 
     def get_equity_symbol(self, exchangeSegment, series, symbol):
         try:
