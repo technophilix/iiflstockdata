@@ -69,7 +69,7 @@ if response['type'] == 'success':
             exchange_instrument_id = row['ExchangeInstrumentID']
             # print(i)
             percentage_completion = ((i + 1) / len(result_df.index)) * 100
-            print(str(round(percentage_completion, 2)) + "%" + "=>")
+            print(str(round(percentage_completion, 2)) + "%", end="=>")
             # print(start_time_str, end_time_str)
 
             # print(exchange_instrument_id)

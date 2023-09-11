@@ -69,7 +69,7 @@ if response['type'] == 'success':
             exchange_instrument_id = row['ExchangeInstrumentID']
             # print(i)
             percentage_completion = ((i + 1) / len(result_df.index)) * 100
-            print(str(round(percentage_completion, 2)) + "%" + "=>")
+            print(str(round(percentage_completion, 2)) + "%")
             # print(start_time_str, end_time_str)
 
             # print(exchange_instrument_id)
@@ -95,9 +95,9 @@ if response['type'] == 'success':
 
         for row in rows:
             row_data = row.split('|')
-            timestamp = int(row_data[1])  # Assuming the timestamp is in the first column
-            human_readable_time = datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
-            row_data[1] = human_readable_time
+            # timestamp = int(row_data[1])  # Assuming the timestamp is in the first column
+            # human_readable_time = datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
+            # row_data[1] = human_readable_time
             data_list.append(row_data)
         column_names = [
             'Stock', 'Time of Fetch', 'Open', 'High', 'Low', 'Close', 'Volume', 'OI', ''
