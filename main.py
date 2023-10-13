@@ -33,7 +33,6 @@ if response['type'] == 'success':
         print("You can not run this program on Saturday or Sunday.")
 
     else:
-
         if current_time.hour > 15 or (current_time.hour == 15 and current_time.minute >= 30):
             # Set the end_time to 3:30 PM
             end_time = current_time.replace(hour=13, minute=29, second=0, microsecond=0)
